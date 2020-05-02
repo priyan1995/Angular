@@ -1,26 +1,77 @@
+<header id="header">
+    <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt="logo"></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="scroll" (click)="getActiveTab('home')" [class.active]="activetab == 'home'">
+                        <a routerLink="/">Home </a>
+                    </li>
+                    <li class="scroll" (click)="getActiveTab('service')" [class.active]="activetab == 'service'">
+                        <a routerLink="/services">Service </a>
+                    </li>
+                    <!-- <li class="scroll">
+                        <a routerLink="/portfolio">Portfolio</a>
+                    </li> -->
+                    <li class="scroll" (click)="getActiveTab('team')" [class.active]="activetab == 'team'">
+                        <a routerLink="/meet-team">Team </a>
+                    </li>
+                    <li class="scroll" (click)="getActiveTab('price')" [class.active]="activetab == 'price'">
+                        <a routerLink="/pricing">Price</a>
+                    </li>
+                    <li class="scroll" (click)="getActiveTab('blog')" [class.active]="activetab == 'blog'">
+                        <a routerLink="/blog"> Blog </a>
+                    </li>
+                    <li class="scroll" (click)="getActiveTab('testimonial')" [class.active]="activetab == 'testimonial'">
+                        <a routerLink="/testimonial"> Testimonial </a>
+                    </li>
+                    <li class="scroll" (click)="getActiveTab('contact')" [class.active]="activetab == 'contact'">
+                        <a routerLink="/get-in-touch">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--/.container-->
+    </nav>
+    <!--/nav-->
+</header>
+<!--/header-->
+
 <!-- main slider -->
-<app-main-slider></app-main-slider>
+<!-- <app-main-slider></app-main-slider> -->
+
+
+<router-outlet></router-outlet>
 
 <!-- services section -->
-<app-services></app-services>
+<!-- <app-services></app-services> -->
 
 <!-- animated number section -->
-<app-animated-number></app-animated-number>
+<!-- <app-animated-number></app-animated-number> -->
 
 <!-- portfolio section -->
-<app-portfolio></app-portfolio>
+<!-- <app-portfolio></app-portfolio> -->
 
 <!-- meet team section -->
-<app-meet-team></app-meet-team>
+<!-- <app-meet-team></app-meet-team> -->
 
 <!-- pricing section -->
-<app-pricing></app-pricing>
+<!-- <app-pricing></app-pricing> -->
 
 <!-- blog section -->
-<app-blog></app-blog>
+<!-- <app-blog></app-blog> -->
 
 <!-- testimonial section -->
-<app-testimonial></app-testimonial>
+<!-- <app-testimonial></app-testimonial> -->
 
 <!-- get in touch section -->
-<app-get-in-touch></app-get-in-touch>
+<!-- <app-get-in-touch></app-get-in-touch> -->

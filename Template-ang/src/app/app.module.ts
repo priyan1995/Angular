@@ -14,6 +14,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,14 @@ import { HeaderComponent } from './header/header.component';
     TestimonialComponent,
     GetInTouchComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

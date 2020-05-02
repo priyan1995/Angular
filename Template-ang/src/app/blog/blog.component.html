@@ -5,9 +5,10 @@
             <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
         </div>
 
+
         <div class="row">
-            <div id="owl-example" class="owl-carousel">
-                <div class="text-center item">
+            <owl-carousel-o [options]="customOptions">
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -27,8 +28,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -48,8 +49,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -69,9 +70,9 @@
 
                         </article>
                     </div>
-                </div>
+                </ng-template>
 
-                <div class="text-center item">
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -91,8 +92,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -112,8 +113,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template carouselSlide class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -133,9 +134,9 @@
 
                         </article>
                     </div>
-                </div>
+                </ng-template>
 
-                <div class="text-center item">
+                <ng-template class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -155,8 +156,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -176,8 +177,8 @@
 
                         </article>
                     </div>
-                </div>
-                <div class="text-center item">
+                </ng-template>
+                <ng-template class="text-center item">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
                             <header class="entry-header">
@@ -197,12 +198,12 @@
 
                         </article>
                     </div>
-                </div>
+                </ng-template>
 
 
 
 
-            </div>
+            </owl-carousel-o>
         </div>
 
     </div>
