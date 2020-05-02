@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Angular Demo</title>
+    <!-- core assets/css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.assets/js"></script>
+    <script src="assets/js/respond.min.assets/js"></script>
+    <![endif]-->
+
+</head>
+<!--/head-->
+
+<body id="home" class="homepage">
+
+    <header id="header">
+        <nav id="main-menu" class="navbar navbar-default navbar-fixed-top top-nav-collapse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="scroll active"><a href="#home">Home </a></li>
+                        <li class="scroll"><a href="#services">Service </a></li>
+                        <li class="scroll"><a href="#portfolio">Portfolio</a></li>
+                        <li class="scroll"><a href="#meet-team">Team </a></li>
+                        <li class="scroll"><a href="#pricing">Price</a></li>
+                        <li class="scroll"><a href="#blog"> Blog </a></li>
+                        <li class="scroll"><a href="#testimonial"> Testimonial </a></li>
+                        <li class="scroll"><a href="#get-in-touch">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.container-->
+        </nav>
+        <!--/nav-->
+    </header>
+    <!--/header-->
+
+
+    <app-root></app-root>
+
+    <!-- footer -->
+    <footer id="footer">
+        <div class="container text-center">
+            All rights reserved © 2020 | <a href="">Angular Demo Template</a> from <a href="">priyan.com</a>
+        </div>
+    </footer>
+    <!--/#footer-->
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/mousescroll.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="assets/js/jquery.isotope.min.js"></script>
+    <script src="assets/js/jquery.inview.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $("#owl-example").owlCarousel();
+        });
+
+        $("body").data("page", "frontpage");
+
+        $("#owl-example").owlCarousel({
+            items: 3,
+            /*        itemsDesktop : [1199,3],
+                    itemsDesktopSmall : [980,9],
+                    itemsTablet: [768,5],
+                    itemsTabletSmall: false,
+                    itemsMobile : [479,4]*/
+        })
+    </script>
+
+
+
+</body>
+
+</html>
+
+<base href="/">
