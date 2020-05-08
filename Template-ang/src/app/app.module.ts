@@ -16,6 +16,11 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { environment } from './../environments/environment';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
 
 @NgModule({
   declarations: [
@@ -33,11 +38,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     HeaderComponent,
     HomeComponent,
     
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CarouselModule
+    CarouselModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]

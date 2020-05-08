@@ -1,58 +1,31 @@
 <section id="testimonial">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title text-center wow fadeInDown">testimonials</h2>
-            <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <h2 class="section-title text-center wow fadeInDown">{{TestiPage.testiTitle}}</h2>
+            <p class="text-center wow fadeInDown">{{TestiPage.testiDesc}}</p>
         </div>
 
         <div class="row">
-            <div class="col-sm-6">
+            <!-- <div class="col-sm-6" *ngFor="let testCards of TestiPage.testiCards">
                 <div class="panel-one">
-                    <div class="user-img"><img alt="" src="../assets/images/testimonail_1.jpg"></div>
+                    <div class="user-img"><img alt="" src="{{testCards.image}}"></div>
                     <div class="testi-info">
-                        <h4>Jonathon Andrew</h4>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur.</p>
+                        <h4>{{testCards.name}}</h4>
+                        <h5>{{testCards.position}}</h5>
+                        <p>{{testCards.desc}}</p>
                     </div>
                 </div>
+            </div> -->
 
-
-            </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6" *ngFor="let testimonial of testimonials">
                 <div class="panel-one">
-                    <div class="user-img"><img alt="" src="../assets/images/testimonail_2.jpg"></div>
+                    <div class="user-img"><img alt="" src="{{testimonial.image}}"></div>
                     <div class="testi-info">
-                        <h4>Jonathon Andrew</h4>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur.</p>
+                        <h4>{{testimonial.client}}</h4>
+                        <h5>{{testimonial.position}}</h5>
+                        <p>{{testimonial.description}}</p>
                     </div>
                 </div>
-
-
-            </div>
-            <div class="col-sm-6">
-                <div class="panel-one">
-                    <div class="user-img"><img alt="" src="../assets/images/testimonail_3.jpg"></div>
-                    <div class="testi-info">
-                        <h4>Jonathon Andrew</h4>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col-sm-6">
-                <div class="panel-one">
-                    <div class="user-img"><img alt="" src="../assets/images/testimonail_4.jpg"></div>
-                    <div class="testi-info">
-                        <h4>Jonathon Andrew</h4>
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-
-
             </div>
 
 

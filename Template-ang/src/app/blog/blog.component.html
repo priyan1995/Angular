@@ -1,70 +1,52 @@
 <section id="blog">
     <div class="container">
         <div class="section-header">
-            <h2 class="section-title text-center wow fadeInDown">Latest Blogs</h2>
-            <p class="text-center wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+            <h2 class="section-title text-center wow fadeInDown">{{blogpage.mainHeading}}</h2>
+            <p class="text-center wow fadeInDown">{{blogpage.Description}}</p>
         </div>
 
 
         <div class="row">
             <owl-carousel-o [options]="customOptions">
-                <ng-template carouselSlide class="text-center item">
+                <!-- <ng-template carouselSlide class="text-center item" *ngFor="let blogcrd of blogpage.blogCards">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
+
                             <header class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog1.jpg" alt="">
+                                    <img src="{{blogcrd.image}}" alt="">
 
                                 </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                                <div class="entry-date">{{blogcrd.date}}</div>
+                                <h2 class="entry-title"><a href="#">{{blogcrd.title}}</a></h2>
                             </header>
 
                             <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
+                                <P>{{blogcrd.Description}}</P>
+                                <a class="btn btn-primary" href="{{blogcrd.buttonLink}}">BUY NOW</a>
                             </div>
 
 
                         </article>
                     </div>
-                </ng-template>
-                <ng-template carouselSlide class="text-center item">
+                </ng-template> -->
+
+                <ng-template carouselSlide class="text-center item" *ngFor="let blogitem of blog">
                     <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
                         <article>
+
                             <header class="entry-header">
                                 <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog2.jpg" alt="">
+                                    <img src="{{blogitem.blog_img}}" alt="">
 
                                 </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
+                                <div class="entry-date">{{blogitem.blog_date}}</div>
+                                <h2 class="entry-title"><a href="#">{{blogitem.blog_title}}</a></h2>
                             </header>
 
                             <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog3.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
+                                <P>{{blogitem.blog_desc}}</P>
+                                <a class="btn btn-primary" href="{{blogitem.blog_btn}}">BUY NOW</a>
                             </div>
 
 
@@ -72,133 +54,7 @@
                     </div>
                 </ng-template>
 
-                <ng-template carouselSlide class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog1.jpg" alt="">
 
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog2.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-                <ng-template carouselSlide class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog3.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-
-                <ng-template class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog1.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-                <ng-template class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog2.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
-                <ng-template class="text-center item">
-                    <div class="blog-post blog-large wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="0ms">
-                        <article>
-                            <header class="entry-header">
-                                <div class="entry-thumbnail">
-                                    <img src="../assets/images/blog3.jpg" alt="">
-
-                                </div>
-                                <div class="entry-date">25 November 2014</div>
-                                <h2 class="entry-title"><a href="#">Lorem ipsum dolor sit amet</a></h2>
-                            </header>
-
-                            <div class="entry-content">
-                                <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</P>
-                                <a class="btn btn-primary" href="#">BUY NOW</a>
-                            </div>
-
-
-                        </article>
-                    </div>
-                </ng-template>
 
 
 
